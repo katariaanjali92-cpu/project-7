@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff8ef">
+  <title>Hello, India!</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      color: #243047;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(ellipse at 15% 15%, #ffe0b2 0, transparent 34%),
+        radial-gradient(ellipse at 85% 85%, #d9edff 0, transparent 35%),
+        #fff8ef;
+    }
+
+    main {
+      width: min(100%, 680px);
+      padding: clamp(32px, 8vw, 72px) 24px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(36, 48, 71, 0.08);
+      border-radius: 28px;
+      box-shadow: 0 24px 70px rgba(69, 54, 32, 0.12);
+    }
+
+    .flag {
+      width: 96px;
+      height: 64px;
+      margin: 0 auto 30px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border-radius: 5px;
+      box-shadow: 0 8px 18px rgba(36, 48, 71, 0.14);
+    }
+
+    .saffron,
+    .white,
+    .green {
+      flex: 1;
+    }
+
+    .saffron {
+      background: #ff9933;
+    }
+
+    .white {
+      display: grid;
+      place-items: center;
+      background: #fff;
+    }
+
+    .chakra {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #138808;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .chakra::before,
+    .chakra::after {
+      content: "";
+      position: absolute;
+      background: #138808;
+    }
+
+    .chakra::before {
+      width: 2px;
+      height: 16px;
+      top: 0;
+      left: 7px;
+    }
+
+    .chakra::after {
+      width: 16px;
+      height: 2px;
+      top: 7px;
+      left: 0;
+    }
+
+    .green {
+      background: #138808;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 9vw, 5rem);
+      line-height: 1.05;
+      letter-spacing: -0.06em;
+    }
+
+    h1 span {
+      color: #e87318;
+    }
+
+    p {
+      margin: 20px 0 0;
+      color: #667085;
+      font-size: clamp(1rem, 3vw, 1.2rem);
+      line-height: 1.6;
+    }
+
+    .greeting {
+      margin-top: 28px;
+      display: inline-block;
+      padding: 10px 16px;
+      color: #167142;
+      font-weight: 600;
+      background: #eaf6ed;
+      border-radius: 999px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="flag" role="img" aria-label="The Indian flag">
+      <div class="saffron"></div>
+      <div class="white"><span class="chakra"></span></div>
+      <div class="green"></div>
+    </div>
+    <h1><span>Hello,</span><br>India!</h1>
+    <p>A warm hello to the people, colors, and spirit of India.</p>
+    <div class="greeting" lang="hi">नमस्ते, भारत!</div>
+  </main>
+</body>
+</html>
